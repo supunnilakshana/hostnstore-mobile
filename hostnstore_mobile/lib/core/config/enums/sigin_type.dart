@@ -1,0 +1,4 @@
+enum SiginType {
+  employee,
+  client,
+}
