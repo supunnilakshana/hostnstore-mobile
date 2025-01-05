@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:hostnstore_mobile/core/config/app/locator.dart';
 import 'package:hostnstore_mobile/core/services/app_service/app_config_service.dart';
 import 'package:hostnstore_mobile/core/services/facade_service/app_dialog_service.dart';
+import 'package:hostnstore_mobile/temp_app/screens/onbording/views/onbording_screnn.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 
@@ -18,6 +19,7 @@ class SplashViewModel extends BaseViewModel {
 
   _init() async {
     Timer(const Duration(seconds: 2), () async {
+      _navigationService.clearStackAndShowView(const OnBordingScreen());
       // try {
 
       //   AppUpdateCheck appUpdateCheck =
@@ -76,6 +78,7 @@ class SplashViewModel extends BaseViewModel {
     //   _navigationService.clearStackAndShow(
     //     Routes.baseTransitionAreaView,
     //   );
+
     // }
   }
 }

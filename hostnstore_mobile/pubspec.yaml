@@ -20,7 +20,6 @@ dependencies:
   stacked: ^3.4.3
   stacked_services: ^1.5.1
   google_fonts: ^6.2.1
-  device_preview: ^1.2.0
   image_editor_plus: ^1.0.6
   image_picker: ^1.1.2
   path_provider: ^2.1.5
@@ -65,7 +64,6 @@ flutter:
     - assets/Illustration/
     - assets/flags/
     - assets/logo/
-    - assets/screens/
 
   fonts:
     - family: Plus Jakarta

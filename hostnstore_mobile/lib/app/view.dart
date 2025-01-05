@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:hostnstore_mobile/core/config/routes/router.router.dart';
-import 'package:hostnstore_mobile/ui/theme/theme.dart';
+import 'package:hostnstore_mobile/temp_app/theme/app_theme.dart';
+
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 import 'view_model.dart';
@@ -23,7 +24,9 @@ class MyApp extends StackedView<MyAppViewModel> {
         );
       },
       title: 'HostNStore',
-      theme: AppTheme.theme,
+      // theme: AppTheme.theme,
+      themeMode: ThemeMode.light,
+      theme: AppTheme.lightTheme(context),
       debugShowCheckedModeBanner: false,
       onGenerateRoute: StackedRouter().onGenerateRoute,
       navigatorKey: StackedService.navigatorKey,
