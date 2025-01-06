@@ -8,17 +8,19 @@ import 'package:hostnstore_mobile/core/services/facade_service/app_dialog_servic
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 
-class SampleViewModel extends BaseViewModel {
+class SignInViewModel extends BaseViewModel {
   final NavigationService _navigationService = locator<NavigationService>();
 
   final AppConfigService _appConfigService = locator<AppConfigService>();
   final AppDialogService _appDialogService = locator<AppDialogService>();
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
-
   final ToastService _toastService = locator<ToastService>();
   FetchingStatus fetchingStatus = FetchingStatus.fetching;
-
   late dynamic appException;
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
+
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
 
   @override
   List<ListenableServiceMixin> get listenableServices => [];

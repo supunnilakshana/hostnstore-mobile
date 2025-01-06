@@ -4,7 +4,7 @@ class AppColors {
   // Primary and Secondary Colors
   static const Color primary = Color(0xFF7B61FF);
 
-  static Color get primaryLight => Colors.amber.shade300;
+  static Color get primaryLight => const Color(0xFFA390FF);
 
 // On color 80, 60.... those means opacity
 
@@ -80,7 +80,7 @@ class AppColors {
   static Color get black => const Color(0xFF000000);
   static Color get gray => const Color(0xFF4E4E4E);
 
-  static Color get whiteGray => const Color.fromARGB(255, 192, 192, 192);
+  static const Color whiteGray = Color.fromARGB(255, 238, 238, 238);
   static Color get lightGray => const Color(0xFFE3E3E3);
 
   static Color get yellow => const Color(0xFFFDCD03);

@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hostnstore_mobile/temp_app/route/route_constants.dart';
 
-import '../../../../constants.dart';
-
 class ExpansionCategory extends StatelessWidget {
   const ExpansionCategory({
     super.key,
