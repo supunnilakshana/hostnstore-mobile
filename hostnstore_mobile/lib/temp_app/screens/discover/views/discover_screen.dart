@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hostnstore_mobile/temp_app/constants.dart';
-import 'package:hostnstore_mobile/temp_app/models/category_model.dart';
+import 'package:hostnstore_mobile/core/models/ui_models/category_model.dart';
 import 'package:hostnstore_mobile/temp_app/screens/search/views/components/search_form.dart';
 
 import 'components/expansion_category.dart';

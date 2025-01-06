@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hostnstore_mobile/temp_app/components/banner/S/banner_s_style_1.dart';
-import 'package:hostnstore_mobile/temp_app/components/banner/S/banner_s_style_5.dart';
+import 'package:hostnstore_mobile/ui/widgets/common_widgets/banner/S/banner_s_style_1.dart';
+import 'package:hostnstore_mobile/ui/widgets/common_widgets/banner/S/banner_s_style_5.dart';
 import 'package:hostnstore_mobile/temp_app/constants.dart';
 import 'package:hostnstore_mobile/temp_app/route/route_constants.dart';
 import 'components/best_sellers.dart';

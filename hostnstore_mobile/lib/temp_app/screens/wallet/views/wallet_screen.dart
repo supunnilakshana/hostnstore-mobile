@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hostnstore_mobile/temp_app/constants.dart';
-import 'package:hostnstore_mobile/temp_app/models/product_model.dart';
+import 'package:hostnstore_mobile/core/models/ui_models/product_model.dart';
 import 'components/wallet_balance_card.dart';
 import 'components/wallet_history_card.dart';
 

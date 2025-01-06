@@ -1,11 +1,11 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:hostnstore_mobile/temp_app/components/banner/M/banner_m_style_1.dart';
-import 'package:hostnstore_mobile/temp_app/components/banner/M/banner_m_style_2.dart';
-import 'package:hostnstore_mobile/temp_app/components/banner/M/banner_m_style_3.dart';
-import 'package:hostnstore_mobile/temp_app/components/banner/M/banner_m_style_4.dart';
-import 'package:hostnstore_mobile/temp_app/components/dot_indicators.dart';
+import 'package:hostnstore_mobile/ui/widgets/common_widgets/banner/M/banner_m_style_1.dart';
+import 'package:hostnstore_mobile/ui/widgets/common_widgets/banner/M/banner_m_style_2.dart';
+import 'package:hostnstore_mobile/ui/widgets/common_widgets/banner/M/banner_m_style_3.dart';
+import 'package:hostnstore_mobile/ui/widgets/common_widgets/banner/M/banner_m_style_4.dart';
+import 'package:hostnstore_mobile/ui/widgets/common_widgets/dot_indicators.dart';
 
 import '../../../../constants.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hostnstore_mobile/temp_app/components/product/product_card.dart';
-import 'package:hostnstore_mobile/temp_app/models/product_model.dart';
+import 'package:hostnstore_mobile/ui/widgets/common_widgets/product/product_card.dart';
+import 'package:hostnstore_mobile/core/models/ui_models/product_model.dart';
 import 'package:hostnstore_mobile/temp_app/route/route_constants.dart';
 import '../../../constants.dart';
 

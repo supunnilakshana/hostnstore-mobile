@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hostnstore_mobile/ui/theme/color.dart';
 
-import 'package:hostnstore_mobile/ui/widgets/loadings/primary_loading.dart';
+import 'package:hostnstore_mobile/ui/widgets/common_widgets/loadings/primary_loading.dart';
 import 'package:stacked_services/stacked_services.dart';
 
 class AppDialogService {
