@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../constants.dart';
 import 'order_process.dart';
@@ -32,22 +33,22 @@ class OrderStatusCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      borderRadius:
-          const BorderRadius.all(Radius.circular(defaultBorderRadious)),
+      borderRadius: const BorderRadius.all(
+          Radius.circular(AppStyle.defaultBorderRadious)),
       onTap: press,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           Container(
             decoration: BoxDecoration(
-              borderRadius:
-                  const BorderRadius.all(Radius.circular(defaultBorderRadious)),
+              borderRadius: const BorderRadius.all(
+                  Radius.circular(AppStyle.defaultBorderRadious)),
               border: Border.all(color: Theme.of(context).dividerColor),
             ),
             child: Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(defaultPadding),
+                  padding: const EdgeInsets.all(AppStyle.defaultPadding),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -64,12 +65,13 @@ class OrderStatusCard extends StatelessWidget {
                             child: Row(
                               children: [
                                 const Text("Order"),
-                                const SizedBox(width: defaultPadding / 2),
+                                const SizedBox(
+                                    width: AppStyle.defaultPadding / 2),
                                 Text("#$orderId"),
                               ],
                             ),
                           ),
-                          const SizedBox(height: defaultPadding / 2),
+                          const SizedBox(height: AppStyle.defaultPadding / 2),
                           Text(
                             "Placed on $placedOn",
                             style: Theme.of(context).textTheme.titleSmall,
@@ -88,7 +90,8 @@ class OrderStatusCard extends StatelessWidget {
                 ),
                 const Divider(height: 1),
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: defaultPadding),
+                  padding: const EdgeInsets.symmetric(
+                      vertical: AppStyle.defaultPadding),
                   child: OrderProgress(
                     orderStatus: orderStatus,
                     processingStatus: processingStatus,
@@ -99,8 +102,8 @@ class OrderStatusCard extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: defaultPadding),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: AppStyle.defaultPadding),
                   child: Column(
                     children: products ?? [],
                   ),

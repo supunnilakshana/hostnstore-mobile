@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hostnstore_mobile/temp_app/components/Banner/M/banner_m_with_counter.dart';
+import 'package:hostnstore_mobile/temp_app/components/banner/M/banner_m_with_counter.dart';
 import 'package:hostnstore_mobile/temp_app/route/route_constants.dart';
 import '../../../../components/product/product_card.dart';
 import '../../../../constants.dart';

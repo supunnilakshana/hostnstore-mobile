@@ -1,4 +1,5 @@
 // For demo only
+import 'package:hostnstore_mobile/core/config/constants/data_const.dart';
 import 'package:hostnstore_mobile/temp_app/constants.dart';
 
 class ProductModel {
@@ -19,7 +20,7 @@ class ProductModel {
 
 List<ProductModel> demoPopularProducts = [
   ProductModel(
-    image: productDemoImg1,
+    image: DataConst.productDemoImg1,
     title: "Mountain Warehouse for Women",
     brandName: "Lipsy london",
     price: 540,
@@ -27,13 +28,13 @@ List<ProductModel> demoPopularProducts = [
     dicountpercent: 20,
   ),
   ProductModel(
-    image: productDemoImg4,
+    image: DataConst.productDemoImg4,
     title: "Mountain Beta Warehouse",
     brandName: "Lipsy london",
     price: 800,
   ),
   ProductModel(
-    image: productDemoImg5,
+    image: DataConst.productDemoImg5,
     title: "FS - Nike Air Max 270 Really React",
     brandName: "Lipsy london",
     price: 650.62,
@@ -41,7 +42,7 @@ List<ProductModel> demoPopularProducts = [
     dicountpercent: 40,
   ),
   ProductModel(
-    image: productDemoImg6,
+    image: DataConst.productDemoImg6,
     title: "Green Poplin Ruched Front",
     brandName: "Lipsy london",
     price: 1264,
@@ -67,7 +68,7 @@ List<ProductModel> demoPopularProducts = [
 ];
 List<ProductModel> demoFlashSaleProducts = [
   ProductModel(
-    image: productDemoImg5,
+    image: DataConst.productDemoImg5,
     title: "FS - Nike Air Max 270 Really React",
     brandName: "Lipsy london",
     price: 650.62,
@@ -75,7 +76,7 @@ List<ProductModel> demoFlashSaleProducts = [
     dicountpercent: 40,
   ),
   ProductModel(
-    image: productDemoImg6,
+    image: DataConst.productDemoImg6,
     title: "Green Poplin Ruched Front",
     brandName: "Lipsy london",
     price: 1264,
@@ -83,7 +84,7 @@ List<ProductModel> demoFlashSaleProducts = [
     dicountpercent: 5,
   ),
   ProductModel(
-    image: productDemoImg4,
+    image: DataConst.productDemoImg4,
     title: "Mountain Beta Warehouse",
     brandName: "Lipsy london",
     price: 800,
@@ -109,7 +110,7 @@ List<ProductModel> demoBestSellersProducts = [
     dicountpercent: 5,
   ),
   ProductModel(
-    image: productDemoImg4,
+    image: DataConst.productDemoImg4,
     title: "Mountain Beta Warehouse",
     brandName: "Lipsy london",
     price: 800,

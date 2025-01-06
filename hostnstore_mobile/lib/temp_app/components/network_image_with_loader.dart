@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../constants.dart';
 import 'skleton/skelton.dart';
@@ -11,7 +12,7 @@ class NetworkImageWithLoader extends StatelessWidget {
     this.src, {
     super.key,
     this.fit = BoxFit.cover,
-    this.radius = defaultPadding,
+    this.radius = AppStyle.defaultPadding,
   });
 
   final String src;

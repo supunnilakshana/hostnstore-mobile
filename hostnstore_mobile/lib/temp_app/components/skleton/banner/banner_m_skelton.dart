@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../../../constants.dart';
 import '../skelton.dart';
@@ -16,7 +17,7 @@ class BannerMSkelton extends StatelessWidget {
         children: [
           Skeleton(radious: 0),
           Padding(
-            padding: EdgeInsets.all(defaultPadding),
+            padding: EdgeInsets.all(AppStyle.defaultPadding),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
@@ -25,7 +26,7 @@ class BannerMSkelton extends StatelessWidget {
                   height: 24,
                   width: 200,
                 ),
-                SizedBox(height: defaultPadding / 2),
+                SizedBox(height: AppStyle.defaultPadding / 2),
                 Skeleton(
                   height: 24,
                   width: 160,

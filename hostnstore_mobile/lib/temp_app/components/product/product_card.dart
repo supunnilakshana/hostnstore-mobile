@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hostnstore_mobile/ui/theme/color.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../../constants.dart';
 import '../network_image_with_loader.dart';
@@ -34,19 +36,20 @@ class ProductCard extends StatelessWidget {
             aspectRatio: 1.15,
             child: Stack(
               children: [
-                NetworkImageWithLoader(image, radius: defaultBorderRadious),
+                NetworkImageWithLoader(image,
+                    radius: AppStyle.defaultBorderRadious),
                 if (dicountpercent != null)
                   Positioned(
-                    right: defaultPadding / 2,
-                    top: defaultPadding / 2,
+                    right: AppStyle.defaultPadding / 2,
+                    top: AppStyle.defaultPadding / 2,
                     child: Container(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: defaultPadding / 2),
+                          horizontal: AppStyle.defaultPadding / 2),
                       height: 16,
                       decoration: const BoxDecoration(
-                        color: errorColor,
+                        color: AppColors.errorColor,
                         borderRadius: BorderRadius.all(
-                            Radius.circular(defaultBorderRadious)),
+                            Radius.circular(AppStyle.defaultBorderRadious)),
                       ),
                       child: Text(
                         "$dicountpercent% off",
@@ -63,7 +66,8 @@ class ProductCard extends StatelessWidget {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(
-                  horizontal: defaultPadding / 2, vertical: defaultPadding / 2),
+                  horizontal: AppStyle.defaultPadding / 2,
+                  vertical: AppStyle.defaultPadding / 2),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -74,7 +78,7 @@ class ProductCard extends StatelessWidget {
                         .bodyMedium!
                         .copyWith(fontSize: 10),
                   ),
-                  const SizedBox(height: defaultPadding / 2),
+                  const SizedBox(height: AppStyle.defaultPadding / 2),
                   Text(
                     title,
                     maxLines: 2,
@@ -96,7 +100,7 @@ class ProductCard extends StatelessWidget {
                                 fontSize: 12,
                               ),
                             ),
-                            const SizedBox(width: defaultPadding / 4),
+                            const SizedBox(width: AppStyle.defaultPadding / 4),
                             Text(
                               "\$$price",
                               style: TextStyle(

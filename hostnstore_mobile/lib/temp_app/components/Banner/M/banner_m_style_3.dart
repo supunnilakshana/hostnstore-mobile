@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/svg.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import 'banner_m.dart';
 
@@ -26,7 +27,7 @@ class BannerMStyle3 extends StatelessWidget {
       press: press,
       children: [
         Padding(
-          padding: const EdgeInsets.all(defaultPadding),
+          padding: const EdgeInsets.all(AppStyle.defaultPadding),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -37,8 +38,8 @@ class BannerMStyle3 extends StatelessWidget {
                   children: [
                     Container(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: defaultPadding / 2,
-                          vertical: defaultPadding / 8),
+                          horizontal: AppStyle.defaultPadding / 2,
+                          vertical: AppStyle.defaultPadding / 8),
                       color: Colors.white70,
                       child: Text(
                         "$discountParcent% off",
@@ -49,11 +50,11 @@ class BannerMStyle3 extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const SizedBox(height: defaultPadding / 2),
+                    const SizedBox(height: AppStyle.defaultPadding / 2),
                     Text(
                       title.toUpperCase(),
                       style: const TextStyle(
-                        fontFamily: grandisExtendedFont,
+                        fontFamily: AppStyle.grandisExtendedFont,
                         fontSize: 28,
                         fontWeight: FontWeight.w900,
                         color: Colors.white,
@@ -63,7 +64,7 @@ class BannerMStyle3 extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(width: defaultPadding),
+              const SizedBox(width: AppStyle.defaultPadding),
               SizedBox(
                 height: 48,
                 width: 48,

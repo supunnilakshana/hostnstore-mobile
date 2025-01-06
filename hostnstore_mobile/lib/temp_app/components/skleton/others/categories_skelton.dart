@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
-import '../../../constants.dart';
 import '../skelton.dart';
 
 class CategoriesSkelton extends StatelessWidget {
@@ -15,8 +15,8 @@ class CategoriesSkelton extends StatelessWidget {
       child: Row(
         children: List.generate(
           5,
-          (_) => const Padding(
-            padding: EdgeInsets.only(left: defaultPadding),
+          (_) => Padding(
+            padding: const EdgeInsets.only(left: AppStyle.defaultPadding),
             child: Skeleton(
               height: 32,
               width: 96,

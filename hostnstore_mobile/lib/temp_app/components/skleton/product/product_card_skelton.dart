@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../../../constants.dart';
 import '../skelton.dart';
@@ -14,7 +15,7 @@ class ProductCardSkelton extends StatelessWidget {
       height: 220,
       width: 140,
       child: Padding(
-        padding: EdgeInsets.all(defaultPadding / 2),
+        padding: EdgeInsets.all(AppStyle.defaultPadding / 2),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

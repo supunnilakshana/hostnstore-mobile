@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../constants.dart';
+import 'package:hostnstore_mobile/ui/theme/color.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 class OrderProgress extends StatelessWidget {
   const OrderProgress({
@@ -110,7 +110,7 @@ class ProcessDotWithLine extends StatelessWidget {
                     : Theme.of(context).textTheme.bodyMedium!.color,
               ),
         ),
-        const SizedBox(height: defaultPadding / 2),
+        const SizedBox(height: AppStyle.defaultPadding / 2),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -129,7 +129,7 @@ class ProcessDotWithLine extends StatelessWidget {
                   height: 2,
                   color: nextStatus != null
                       ? lineColor(context, nextStatus!)
-                      : successColor,
+                      : AppColors.successColor,
                 ),
               ),
             if (!isShowRightLine) const Spacer(),
@@ -147,7 +147,7 @@ Widget statusWidget(BuildContext context, OrderProcessStatus status) {
     case OrderProcessStatus.processing:
       return CircleAvatar(
         radius: 12,
-        backgroundColor: successColor,
+        backgroundColor: AppColors.successColor,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: CircularProgressIndicator(
@@ -170,7 +170,7 @@ Widget statusWidget(BuildContext context, OrderProcessStatus status) {
     case OrderProcessStatus.error:
       return CircleAvatar(
         radius: 12,
-        backgroundColor: errorColor,
+        backgroundColor: AppColors.errorColor,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: CircleAvatar(
@@ -181,7 +181,7 @@ Widget statusWidget(BuildContext context, OrderProcessStatus status) {
     case OrderProcessStatus.canceled:
       return CircleAvatar(
         radius: 12,
-        backgroundColor: errorColor,
+        backgroundColor: AppColors.errorColor,
         child: Icon(
           Icons.close,
           size: 12,
@@ -191,7 +191,7 @@ Widget statusWidget(BuildContext context, OrderProcessStatus status) {
     default:
       return CircleAvatar(
         radius: 12,
-        backgroundColor: successColor,
+        backgroundColor: AppColors.successColor,
         child: Icon(
           Icons.done,
           size: 12,
@@ -207,12 +207,12 @@ Color lineColor(BuildContext context, OrderProcessStatus status) {
       return Theme.of(context).dividerColor;
 
     case OrderProcessStatus.error:
-      return errorColor;
+      return AppColors.errorColor;
 
     case OrderProcessStatus.canceled:
-      return errorColor;
+      return AppColors.errorColor;
 
     default:
-      return successColor;
+      return AppColors.successColor;
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../constants.dart';
 
@@ -17,8 +18,8 @@ Future<dynamic> customModalBottomSheet(
     backgroundColor: Theme.of(context).scaffoldBackgroundColor,
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.only(
-        topLeft: Radius.circular(defaultBorderRadious * 2),
-        topRight: Radius.circular(defaultBorderRadious * 2),
+        topLeft: Radius.circular(AppStyle.defaultBorderRadious * 2),
+        topRight: Radius.circular(AppStyle.defaultBorderRadious * 2),
       ),
     ),
     builder: (context) => SizedBox(

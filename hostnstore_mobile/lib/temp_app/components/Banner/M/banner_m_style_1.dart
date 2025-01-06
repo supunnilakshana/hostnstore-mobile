@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 import 'banner_m.dart';
 
 import '../../../constants.dart';
@@ -21,7 +22,7 @@ class BannerMStyle1 extends StatelessWidget {
       press: press,
       children: [
         Padding(
-          padding: const EdgeInsets.all(defaultPadding),
+          padding: const EdgeInsets.all(AppStyle.defaultPadding),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -31,7 +32,7 @@ class BannerMStyle1 extends StatelessWidget {
                 child: Text(
                   text,
                   style: const TextStyle(
-                    fontFamily: grandisExtendedFont,
+                    fontFamily: AppStyle.grandisExtendedFont,
                     fontWeight: FontWeight.w600,
                     fontSize: 24,
                     color: Colors.white,

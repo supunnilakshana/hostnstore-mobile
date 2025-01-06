@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/svg.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import 'banner_m.dart';
 
@@ -28,7 +29,7 @@ class BannerMStyle4 extends StatelessWidget {
       press: press,
       children: [
         Padding(
-          padding: const EdgeInsets.all(defaultPadding),
+          padding: const EdgeInsets.all(AppStyle.defaultPadding),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -40,8 +41,8 @@ class BannerMStyle4 extends StatelessWidget {
                     if (subtitle != null)
                       Container(
                         padding: const EdgeInsets.symmetric(
-                            horizontal: defaultPadding / 2,
-                            vertical: defaultPadding / 8),
+                            horizontal: AppStyle.defaultPadding / 2,
+                            vertical: AppStyle.defaultPadding / 8),
                         color: Colors.white70,
                         child: Text(
                           subtitle!,
@@ -52,22 +53,22 @@ class BannerMStyle4 extends StatelessWidget {
                           ),
                         ),
                       ),
-                    const SizedBox(height: defaultPadding / 2),
+                    const SizedBox(height: AppStyle.defaultPadding / 2),
                     Text(
                       title.toUpperCase(),
                       style: const TextStyle(
-                        fontFamily: grandisExtendedFont,
+                        fontFamily: AppStyle.grandisExtendedFont,
                         fontSize: 28,
                         fontWeight: FontWeight.w900,
                         color: Colors.white,
                         height: 1,
                       ),
                     ),
-                    // const SizedBox(height: defaultPadding / 4),
+                    // const SizedBox(height: AppStyle.defaultPadding / 4),
                     Text(
                       "UP TO $discountParcent% OFF",
                       style: const TextStyle(
-                        fontFamily: grandisExtendedFont,
+                        fontFamily: AppStyle.grandisExtendedFont,
                         color: Colors.white,
                         fontSize: 12,
                         fontWeight: FontWeight.bold,
@@ -76,7 +77,7 @@ class BannerMStyle4 extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(width: defaultPadding),
+              const SizedBox(width: AppStyle.defaultPadding),
               SizedBox(
                 height: 48,
                 width: 48,

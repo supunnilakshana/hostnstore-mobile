@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hostnstore_mobile/ui/theme/color.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../constants.dart';
 
@@ -20,15 +22,16 @@ class CartButton extends StatelessWidget {
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.symmetric(
-            horizontal: defaultPadding, vertical: defaultBorderRadious / 2),
+            horizontal: AppStyle.defaultPadding,
+            vertical: AppStyle.defaultBorderRadious / 2),
         child: SizedBox(
           height: 64,
           child: Material(
-            color: primaryColor,
+            color: AppColors.primaryColor,
             clipBehavior: Clip.hardEdge,
             shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.all(
-                Radius.circular(defaultBorderRadious),
+                Radius.circular(AppStyle.defaultBorderRadious),
               ),
             ),
             child: InkWell(
@@ -39,7 +42,7 @@ class CartButton extends StatelessWidget {
                     flex: 4,
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: defaultPadding),
+                          horizontal: AppStyle.defaultPadding),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,

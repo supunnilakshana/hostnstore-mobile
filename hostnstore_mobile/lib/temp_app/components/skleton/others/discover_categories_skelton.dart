@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../../../constants.dart';
 import '../skelton.dart';
@@ -26,7 +27,8 @@ class DiscoverCategorySkelton extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Padding(
       padding: EdgeInsets.symmetric(
-          horizontal: defaultPadding, vertical: defaultPadding * 0.75),
+          horizontal: AppStyle.defaultPadding,
+          vertical: AppStyle.defaultPadding * 0.75),
       child: Row(
         children: [
           Skeleton(
@@ -34,7 +36,7 @@ class DiscoverCategorySkelton extends StatelessWidget {
             width: 32,
             radious: 8,
           ),
-          SizedBox(width: defaultPadding),
+          SizedBox(width: AppStyle.defaultPadding),
           Expanded(
             flex: 2,
             child: Skeleton(),

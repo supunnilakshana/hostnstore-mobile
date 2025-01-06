@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 import '../banner_discount_tag.dart';
 import 'banner_m.dart';
 
@@ -27,7 +28,7 @@ class BannerMStyle2 extends StatelessWidget {
       press: press,
       children: [
         Padding(
-          padding: const EdgeInsets.all(defaultPadding),
+          padding: const EdgeInsets.all(AppStyle.defaultPadding),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -39,14 +40,14 @@ class BannerMStyle2 extends StatelessWidget {
                     Text(
                       title.toUpperCase(),
                       style: const TextStyle(
-                        fontFamily: grandisExtendedFont,
+                        fontFamily: AppStyle.grandisExtendedFont,
                         fontSize: 28,
                         fontWeight: FontWeight.w900,
                         color: Colors.white,
                         height: 1,
                       ),
                     ),
-                    const SizedBox(height: defaultPadding / 4),
+                    const SizedBox(height: AppStyle.defaultPadding / 4),
                     if (subtitle != null)
                       Text(
                         subtitle!.toUpperCase(),
@@ -59,7 +60,7 @@ class BannerMStyle2 extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(width: defaultPadding),
+              const SizedBox(width: AppStyle.defaultPadding),
               SizedBox(
                 height: 48,
                 width: 48,

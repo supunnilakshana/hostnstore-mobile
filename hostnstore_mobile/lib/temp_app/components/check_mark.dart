@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:hostnstore_mobile/ui/theme/color.dart';
 
 import '../constants.dart';
 
@@ -7,7 +8,7 @@ class CheckMark extends StatelessWidget {
   const CheckMark({
     super.key,
     this.radious = 8,
-    this.activeColor = primaryColor,
+    this.activeColor = AppColors.primaryColor,
     this.iconColor = Colors.white,
     this.padding = const EdgeInsets.all(2),
   });

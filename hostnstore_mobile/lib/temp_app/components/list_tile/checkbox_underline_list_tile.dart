@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hostnstore_mobile/ui/theme/color.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../../constants.dart';
 
@@ -23,7 +25,7 @@ class CheckboxUnderlineListTile extends StatelessWidget {
     return Column(
       children: [
         CheckboxListTile(
-          activeColor: primaryColor,
+          activeColor: AppColors.primaryColor,
           onChanged: onChanged,
           value: value,
           title: Text.rich(
@@ -47,13 +49,13 @@ class CheckboxUnderlineListTile extends StatelessWidget {
           secondary: trailing != null
               ? Padding(
                   padding: const EdgeInsets.symmetric(
-                      horizontal: defaultPadding / 2),
+                      horizontal: AppStyle.defaultPadding / 2),
                   child: trailing,
                 )
               : null,
           controlAffinity: ListTileControlAffinity.leading,
-          contentPadding:
-              const EdgeInsets.symmetric(horizontal: defaultPadding / 2),
+          contentPadding: const EdgeInsets.symmetric(
+              horizontal: AppStyle.defaultPadding / 2),
         ),
         const Divider(height: 1),
       ],

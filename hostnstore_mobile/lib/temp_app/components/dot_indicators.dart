@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hostnstore_mobile/ui/theme/color.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../constants.dart';
 
@@ -7,7 +9,7 @@ class DotIndicator extends StatelessWidget {
     super.key,
     this.isActive = false,
     this.inActiveColor,
-    this.activeColor = primaryColor,
+    this.activeColor = AppColors.primaryColor,
   });
 
   final bool isActive;
@@ -23,8 +25,9 @@ class DotIndicator extends StatelessWidget {
       decoration: BoxDecoration(
         color: isActive
             ? activeColor
-            : inActiveColor ?? primaryMaterialColor.shade100,
-        borderRadius: const BorderRadius.all(Radius.circular(defaultPadding)),
+            : inActiveColor ?? AppColors.primaryMaterialColor.shade100,
+        borderRadius:
+            const BorderRadius.all(Radius.circular(AppStyle.defaultPadding)),
       ),
     );
   }

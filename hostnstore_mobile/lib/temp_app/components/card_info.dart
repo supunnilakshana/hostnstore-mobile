@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:hostnstore_mobile/ui/theme/color.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../constants.dart';
 
@@ -12,7 +14,7 @@ class CardInfo extends StatelessWidget {
     required this.expiryDate,
     this.isSelected = false,
     this.press,
-    this.bgColor = primaryColor,
+    this.bgColor = AppColors.primaryColor,
   });
 
   final String last4Digits, name, expiryDate;
@@ -32,7 +34,7 @@ class CardInfo extends StatelessWidget {
               decoration: BoxDecoration(
                 color: bgColor,
                 borderRadius: const BorderRadius.all(
-                  Radius.circular(defaultBorderRadious * 2),
+                  Radius.circular(AppStyle.defaultBorderRadious * 2),
                 ),
               ),
               child: Column(
@@ -41,7 +43,7 @@ class CardInfo extends StatelessWidget {
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: defaultPadding),
+                          horizontal: AppStyle.defaultPadding),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -62,11 +64,12 @@ class CardInfo extends StatelessWidget {
                                   backgroundColor: Colors.white,
                                   child: Padding(
                                     padding: const EdgeInsets.all(
-                                        defaultPadding / 4),
+                                        AppStyle.defaultPadding / 4),
                                     child: SvgPicture.asset(
                                       "assets/icons/Singlecheck.svg",
                                       colorFilter: const ColorFilter.mode(
-                                          primaryColor, BlendMode.srcIn),
+                                          AppColors.primaryColor,
+                                          BlendMode.srcIn),
                                     ),
                                   ),
                                 )
@@ -80,7 +83,7 @@ class CardInfo extends StatelessWidget {
                                 fontSize: 18,
                                 fontWeight: FontWeight.w500),
                           ),
-                          const SizedBox(height: defaultPadding),
+                          const SizedBox(height: AppStyle.defaultPadding),
                         ],
                       ),
                     ),
@@ -96,7 +99,8 @@ class CardInfo extends StatelessWidget {
                           width: double.infinity,
                         ),
                         Padding(
-                          padding: const EdgeInsets.all(defaultPadding),
+                          padding:
+                              const EdgeInsets.all(AppStyle.defaultPadding),
                           child: DefaultTextStyle(
                             style: const TextStyle(
                               fontWeight: FontWeight.w500,
@@ -106,7 +110,8 @@ class CardInfo extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(name),
-                                const SizedBox(height: defaultPadding / 4),
+                                const SizedBox(
+                                    height: AppStyle.defaultPadding / 4),
                                 Text(expiryDate)
                               ],
                             ),
@@ -119,7 +124,7 @@ class CardInfo extends StatelessWidget {
               ),
             ),
           ),
-          if (isSelected) const SizedBox(height: defaultPadding),
+          if (isSelected) const SizedBox(height: AppStyle.defaultPadding),
           if (isSelected)
             Form(
               child: TextFormField(
@@ -137,7 +142,7 @@ class CardInfo extends StatelessWidget {
                   counterText: "",
                   prefixIcon: Padding(
                     padding: const EdgeInsets.symmetric(
-                        vertical: defaultPadding * 0.75),
+                        vertical: AppStyle.defaultPadding * 0.75),
                     child: SvgPicture.asset(
                       "assets/icons/CVV.svg",
                       colorFilter: ColorFilter.mode(
@@ -151,7 +156,7 @@ class CardInfo extends StatelessWidget {
                 ),
               ),
             ),
-          if (isSelected) const SizedBox(height: defaultPadding / 2),
+          if (isSelected) const SizedBox(height: AppStyle.defaultPadding / 2),
         ],
       ),
     );

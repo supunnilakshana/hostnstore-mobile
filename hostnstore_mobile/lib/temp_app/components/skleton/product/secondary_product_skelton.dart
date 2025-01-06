@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../../../constants.dart';
 import '../skelton.dart';
@@ -7,7 +8,7 @@ class SeconderyProductSkelton extends StatelessWidget {
   const SeconderyProductSkelton({
     super.key,
     this.isSmall = false,
-    this.padding = const EdgeInsets.all(defaultPadding / 2),
+    this.padding = const EdgeInsets.all(AppStyle.defaultPadding / 2),
   });
 
   final bool isSmall;
@@ -25,10 +26,11 @@ class SeconderyProductSkelton extends StatelessWidget {
             aspectRatio: 1.15,
             child: Skeleton(),
           ),
-          const SizedBox(width: defaultPadding / 2),
+          const SizedBox(width: AppStyle.defaultPadding / 2),
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: defaultPadding / 2),
+              padding: const EdgeInsets.symmetric(
+                  vertical: AppStyle.defaultPadding / 2),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -38,7 +40,8 @@ class SeconderyProductSkelton extends StatelessWidget {
                   ),
                   const Spacer(),
                   const Skeleton(),
-                  if (!isSmall) const SizedBox(height: defaultPadding / 2),
+                  if (!isSmall)
+                    const SizedBox(height: AppStyle.defaultPadding / 2),
                   if (!isSmall) const Skeleton(),
                   const Spacer(),
                   const Skeleton(

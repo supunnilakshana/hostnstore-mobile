@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hostnstore_mobile/temp_app/components/Banner/L/banner_l.dart';
+import 'package:hostnstore_mobile/temp_app/components/banner/L/banner_l.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../../../constants.dart';
 
@@ -26,14 +27,14 @@ class BannerLStyle1 extends StatelessWidget {
       press: press,
       children: [
         Padding(
-          padding: const EdgeInsets.all(defaultPadding),
+          padding: const EdgeInsets.all(AppStyle.defaultPadding),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Spacer(),
               DefaultTextStyle(
                 style: const TextStyle(
-                  fontFamily: grandisExtendedFont,
+                  fontFamily: AppStyle.grandisExtendedFont,
                   fontSize: 60,
                   height: 1.2,
                   fontWeight: FontWeight.bold,
@@ -61,7 +62,7 @@ class BannerLStyle1 extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(width: defaultPadding / 4),
+                    const SizedBox(width: AppStyle.defaultPadding / 4),
                     Text(
                       "%",
                       style: TextStyle(
@@ -77,8 +78,8 @@ class BannerLStyle1 extends StatelessWidget {
               if (subtitle != null)
                 Container(
                   padding: const EdgeInsets.symmetric(
-                      horizontal: defaultPadding / 2,
-                      vertical: defaultPadding / 8),
+                      horizontal: AppStyle.defaultPadding / 2,
+                      vertical: AppStyle.defaultPadding / 8),
                   color: Colors.white70,
                   child: Text(
                     subtitle!,
@@ -89,12 +90,12 @@ class BannerLStyle1 extends StatelessWidget {
                     ),
                   ),
                 ),
-              const SizedBox(height: defaultPadding),
+              const SizedBox(height: AppStyle.defaultPadding),
               Text(
                 title.toUpperCase(),
                 textAlign: TextAlign.center,
                 style: const TextStyle(
-                  fontFamily: grandisExtendedFont,
+                  fontFamily: AppStyle.grandisExtendedFont,
                   fontSize: 31,
                   fontWeight: FontWeight.w900,
                   color: Colors.white,
@@ -105,7 +106,7 @@ class BannerLStyle1 extends StatelessWidget {
               const Text(
                 "Shop now  >",
                 style: TextStyle(
-                  fontFamily: grandisExtendedFont,
+                  fontFamily: AppStyle.grandisExtendedFont,
                   fontSize: 12,
                   fontWeight: FontWeight.w500,
                   color: Colors.white,

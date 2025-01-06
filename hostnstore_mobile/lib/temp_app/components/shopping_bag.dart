@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:hostnstore_mobile/ui/theme/color.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../constants.dart';
 
@@ -36,11 +38,11 @@ class ShoppingBag extends StatelessWidget {
               child: Text(
                 numOfItem!.toString(),
                 style: TextStyle(
-                  fontFamily: grandisExtendedFont,
+                  fontFamily: AppStyle.grandisExtendedFont,
                   fontSize: 10,
                   fontWeight: FontWeight.bold,
                   color: Theme.of(context).brightness == Brightness.dark
-                      ? blackColor
+                      ? AppColors.blackColor
                       : Colors.white,
                 ),
               ),

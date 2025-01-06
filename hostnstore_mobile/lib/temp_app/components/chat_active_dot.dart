@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:hostnstore_mobile/ui/theme/color.dart';
 
 import '../constants.dart';
 
 class ChatActiveDot extends StatelessWidget {
   const ChatActiveDot({
     super.key,
-    this.dotColor = successColor,
+    this.dotColor = AppColors.successColor,
   });
   final Color dotColor;
 

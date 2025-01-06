@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../../../constants.dart';
 import '../skelton.dart';
@@ -22,22 +23,23 @@ class BannerMWithCounterSkelton extends StatelessWidget {
                 width: 200,
                 height: 24,
               ),
-              const SizedBox(height: defaultPadding / 2),
+              const SizedBox(height: AppStyle.defaultPadding / 2),
               const Skeleton(
                 width: 160,
                 height: 24,
               ),
-              const SizedBox(height: defaultPadding),
+              const SizedBox(height: AppStyle.defaultPadding),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: List.generate(
                   3,
                   (_) => const Padding(
-                    padding: EdgeInsets.only(right: defaultPadding / 2),
+                    padding:
+                        EdgeInsets.only(right: AppStyle.defaultPadding / 2),
                     child: Skeleton(
                       height: 40,
                       width: 40,
-                      radious: defaultPadding / 2,
+                      radious: AppStyle.defaultPadding / 2,
                     ),
                   ),
                 ),

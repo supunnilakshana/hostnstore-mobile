@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../../../constants.dart';
 import '../skelton.dart';
@@ -16,7 +17,7 @@ class OffersSkelton extends StatelessWidget {
         children: [
           const Skeleton(),
           const Positioned.fill(
-            left: defaultPadding,
+            left: AppStyle.defaultPadding,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -25,7 +26,7 @@ class OffersSkelton extends StatelessWidget {
                   width: 140,
                   height: 20,
                 ),
-                SizedBox(height: defaultPadding / 2),
+                SizedBox(height: AppStyle.defaultPadding / 2),
                 Skeleton(
                   width: 200,
                   height: 20,
@@ -34,13 +35,13 @@ class OffersSkelton extends StatelessWidget {
             ),
           ),
           Positioned(
-            right: defaultPadding,
-            bottom: defaultPadding,
+            right: AppStyle.defaultPadding,
+            bottom: AppStyle.defaultPadding,
             child: Row(
               children: List.generate(
                 4,
                 (index) => const Padding(
-                  padding: EdgeInsets.only(left: defaultPadding / 4),
+                  padding: EdgeInsets.only(left: AppStyle.defaultPadding / 4),
                   child: CircleSkeleton(size: 8),
                 ),
               ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../../../constants.dart';
 import '../product/secondary_product_skelton.dart';
@@ -16,7 +17,8 @@ class OrderStatusCardSkelton extends StatelessWidget {
       children: [
         const Skeleton(height: 12, width: 100),
         const Padding(
-          padding: EdgeInsets.symmetric(vertical: defaultPadding * 0.75),
+          padding:
+              EdgeInsets.symmetric(vertical: AppStyle.defaultPadding * 0.75),
           child: Skeleton(width: 160),
         ),
         Row(
@@ -26,7 +28,7 @@ class OrderStatusCardSkelton extends StatelessWidget {
             (index) => const CircleSkeleton(size: 28),
           ),
         ),
-        const SizedBox(height: defaultPadding * 0.75),
+        const SizedBox(height: AppStyle.defaultPadding * 0.75),
         const SizedBox(
           height: 86,
           width: double.infinity,

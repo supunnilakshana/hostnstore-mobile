@@ -398,4 +398,41 @@ class AppStyle {
       OutlineInputBorder(
           borderSide: BorderSide(color: color, width: width),
           borderRadius: BorderRadius.circular(7));
+
+  static const double defaultPadding = 16.0;
+  static const double defaultBorderRadious = 12.0;
+  static const grandisExtendedFont = "Grandis Extended";
+
+  static const OutlineInputBorder outlineInputBorder = OutlineInputBorder(
+    borderRadius:
+        BorderRadius.all(Radius.circular(AppStyle.defaultBorderRadious)),
+    borderSide: BorderSide(
+      color: Colors.transparent,
+    ),
+  );
+
+  static const OutlineInputBorder focusedOutlineInputBorder =
+      OutlineInputBorder(
+    borderRadius:
+        BorderRadius.all(Radius.circular(AppStyle.defaultBorderRadious)),
+    borderSide: BorderSide(color: AppColors.primaryColor),
+  );
+
+  static const OutlineInputBorder errorOutlineInputBorder = OutlineInputBorder(
+    borderRadius:
+        BorderRadius.all(Radius.circular(AppStyle.defaultBorderRadious)),
+    borderSide: BorderSide(
+      color: AppColors.errorColor,
+    ),
+  );
+
+  OutlineInputBorder secodaryOutlineInputBorder(BuildContext context) {
+    return OutlineInputBorder(
+      borderRadius: const BorderRadius.all(
+          Radius.circular(AppStyle.defaultBorderRadious)),
+      borderSide: BorderSide(
+        color: Theme.of(context).textTheme.bodyLarge!.color!.withOpacity(0.15),
+      ),
+    );
+  }
 }

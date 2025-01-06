@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:hostnstore_mobile/ui/theme/color.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../constants.dart';
 
@@ -27,12 +29,12 @@ class ReviewCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(defaultPadding),
+      padding: const EdgeInsets.all(AppStyle.defaultPadding),
       width: double.infinity,
       decoration: BoxDecoration(
         color: Theme.of(context).textTheme.bodyLarge!.color!.withOpacity(0.035),
-        borderRadius:
-            const BorderRadius.all(Radius.circular(defaultBorderRadious)),
+        borderRadius: const BorderRadius.all(
+            Radius.circular(AppStyle.defaultBorderRadious)),
       ),
       child: Row(
         children: [
@@ -56,11 +58,12 @@ class ReviewCard extends StatelessWidget {
                   ),
                 ),
                 Text("Based on $numOfReviews Reviews"),
-                const SizedBox(height: defaultPadding),
+                const SizedBox(height: AppStyle.defaultPadding),
                 RatingBar.builder(
                   initialRating: rating,
                   itemSize: 20,
-                  itemPadding: const EdgeInsets.only(right: defaultPadding / 4),
+                  itemPadding:
+                      const EdgeInsets.only(right: AppStyle.defaultPadding / 4),
                   unratedColor: Theme.of(context)
                       .textTheme
                       .bodyLarge!
@@ -76,7 +79,7 @@ class ReviewCard extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(width: defaultPadding),
+          const SizedBox(width: AppStyle.defaultPadding),
           Expanded(
             child: Column(
               children: [
@@ -107,7 +110,8 @@ class RateBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(bottom: star == 1 ? 0 : defaultPadding / 2),
+      padding:
+          EdgeInsets.only(bottom: star == 1 ? 0 : AppStyle.defaultPadding / 2),
       child: Row(
         children: [
           SizedBox(
@@ -118,15 +122,15 @@ class RateBar extends StatelessWidget {
                   color: Theme.of(context).textTheme.bodyMedium!.color),
             ),
           ),
-          const SizedBox(width: defaultPadding / 2),
+          const SizedBox(width: AppStyle.defaultPadding / 2),
           Expanded(
             child: ClipRRect(
               borderRadius: const BorderRadius.all(
-                Radius.circular(defaultBorderRadious),
+                Radius.circular(AppStyle.defaultBorderRadious),
               ),
               child: LinearProgressIndicator(
                 minHeight: 6,
-                color: warningColor,
+                color: AppColors.warningColor,
                 backgroundColor: Theme.of(context)
                     .textTheme
                     .bodyLarge!

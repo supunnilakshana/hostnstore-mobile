@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../../constants.dart';
 
@@ -33,7 +34,7 @@ class BannerDiscountTag extends StatelessWidget {
             "$percentage%\noff",
             textAlign: TextAlign.center,
             style: TextStyle(
-              fontFamily: grandisExtendedFont,
+              fontFamily: AppStyle.grandisExtendedFont,
               color: Colors.black54,
               fontSize: percentageFontSize,
               fontWeight: FontWeight.bold,

@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:hostnstore_mobile/ui/theme/style.dart';
 
 import '../../../constants.dart';
 import '../../blur_container.dart';
@@ -58,13 +59,13 @@ class _BannerMWithCounterState extends State<BannerMWithCounter> {
               widget.text,
               textAlign: TextAlign.center,
               style: const TextStyle(
-                fontFamily: grandisExtendedFont,
+                fontFamily: AppStyle.grandisExtendedFont,
                 fontSize: 24,
                 fontWeight: FontWeight.w500,
                 color: Colors.white,
               ),
             ),
-            const SizedBox(height: defaultPadding),
+            const SizedBox(height: AppStyle.defaultPadding),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -73,7 +74,7 @@ class _BannerMWithCounterState extends State<BannerMWithCounter> {
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(
-                      horizontal: defaultPadding / 4),
+                      horizontal: AppStyle.defaultPadding / 4),
                   child: SvgPicture.asset("assets/icons/dot.svg"),
                 ),
                 BlurContainer(
@@ -84,7 +85,7 @@ class _BannerMWithCounterState extends State<BannerMWithCounter> {
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(
-                      horizontal: defaultPadding / 4),
+                      horizontal: AppStyle.defaultPadding / 4),
                   child: SvgPicture.asset("assets/icons/dot.svg"),
                 ),
                 BlurContainer(
